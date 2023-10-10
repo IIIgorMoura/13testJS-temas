@@ -22,6 +22,6 @@ trocarTema.addEventListener('click', () => {
         document.documentElement.style.setProperty('--corFundo', '#000');
         document.documentElement.style.setProperty('--corFundoDestaque', '#464646');
         document.documentElement.style.setProperty('--corTexto-2', '#fff');
-        document.documentElement.style.setProperty('--fundoImgLanding', '#1451d3');
+        document.documentElement.style.setProperty('--fundoImgLanding', '#008cff');
     }
 });

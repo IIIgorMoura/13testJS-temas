@@ -17,18 +17,39 @@
 /* textos */
 @font-face {
     font-family: 'SofiaSans';
-    src: url(font-SofiaSans/static/SofiaSans-Regular.ttf);
+    src: url(font-SofiaSans/static/SofiaSans-Italic.ttf);
 }
 
 .titulo {
     color: var(--corTexto);
-    font: 100 20px 'SofiaSans';
+    font: 100 30px 'SofiaSans';
 
     transition: 1000ms;
 }
 
 .titulo-2 {
     color: var(--corTexto-2);
+
+    transition: 1000ms;
+}
+
+#tituloDestaque {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    width: 600px;
+    height: 400px;
+    font: 1000 60px "SofiaSans";
+}
+
+#logo {
+    font: 1000 50px "SofiaSans";
+}
+
+.logoCor2 {
+    color: var(--fundoImgLanding);
 
     transition: 1000ms;
 }
@@ -59,6 +80,16 @@ header {
     align-items: center;
 }
 
+#trocar-tema {
+    display: flex;
+
+    width: 45px;
+    height: 50px;
+
+    background-image: url(img/toggleOFF.png);
+    background-size: cover;
+}
+
 #landing-page {
     display: flex;
     flex-direction: row;
@@ -79,16 +110,7 @@ header {
 
 
 
-/* botao trocar cor */
-#trocar-tema {
-    display: flex;
 
-    width: 45px;
-    height: 50px;
-
-    background-image: url(img/toggleOFF.png);
-    background-size: cover;
-}
 
 /* serviços */
 #servicos {
