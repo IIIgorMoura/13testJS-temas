@@ -1,0 +1,18 @@
+/* BASE */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aquamarine;
+}
+
+#trocar-tema {
+    display: flex;
+
+    width: 45px;
+    height: 40px;
+
+    background-image: url(img/toggleOFF.png);
+}
