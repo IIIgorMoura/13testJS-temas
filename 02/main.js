@@ -1,4 +1,4 @@
-// // toggle tema
+// toggle tema
 const trocarTema = document.getElementById('trocar-tema');
 
 trocarTema.addEventListener('click', () => {
@@ -27,3 +27,4 @@ trocarTema.addEventListener('click', () => {
         document.documentElement.style.setProperty('--corTextoLaranja', '#09ff00');
     }
 });
+

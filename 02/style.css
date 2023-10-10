@@ -224,6 +224,11 @@ html {
     color: var(--corFundo);
 }
 
+#espacoExtraTexto {
+    height: 250px;
+    flex-wrap: wrap;
+}
+
 #alinharBotao {
     display: flex;
 
@@ -250,5 +255,9 @@ html {
 
 #botaoEnviar:hover {
     transform: scale(1.1);
+}
+
+#botaoEnviar:active {
+    transform: scale(0.95);
 }
 
