@@ -21,6 +21,11 @@ a {
     text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 /* textos */
 @font-face {
     font-family: 'SofiaSans';
@@ -161,6 +166,10 @@ a {
     height: 300px;
 }
 
+.espacarTextos {
+    margin: 15px 0;
+}
+
 /* blog */
 #centralizarCamera {
     display: flex;
@@ -187,6 +196,8 @@ a {
 #imgBolsa {
     width: auto;
     height: 700px;
+
+    margin-bottom: 50px;
 }
 
 #informacoes {
@@ -233,5 +244,11 @@ a {
     border: none;
 
     background-color: var(--fundoImgLanding);
+
+    transition: 500ms;
+}
+
+#botaoEnviar:hover {
+    transform: scale(1.1);
 }
 
