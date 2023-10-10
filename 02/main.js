@@ -1,6 +1,5 @@
 // // toggle tema
 const trocarTema = document.getElementById('trocar-tema');
-const body = document.body;
 
 trocarTema.addEventListener('click', () => {
     trocarTema.classList.toggle('temaEscuro-Botao');
@@ -9,12 +8,18 @@ trocarTema.addEventListener('click', () => {
     if (trocarTema.classList.contains('temaEscuro-Botao')) {
         trocarTema.style.backgroundImage = 'url("img/toggleOFF.png")';
 
-        document.documentElement.style.setProperty('--corFundo', '#000');
+        // fundo claro
+        document.documentElement.style.setProperty('--corFundo', '#fff');
+        document.documentElement.style.setProperty('--corFundoDestaque', '#b112d9');
+        document.documentElement.style.setProperty('--corTexto-2', '#000');
     }
     
     else if (trocarTema.classList.contains('temaClaro-Botao')) {
         trocarTema.style.backgroundImage = 'url("img/toggleON.png")';
         
-        document.documentElement.style.setProperty('--corFundo', '#fff');
+        // fundo escuro
+        document.documentElement.style.setProperty('--corFundo', '#000');
+        document.documentElement.style.setProperty('--corFundoDestaque', '#464646');
+        document.documentElement.style.setProperty('--corTexto-2', '#fff');
     }
 });
