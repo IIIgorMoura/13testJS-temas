@@ -10,6 +10,7 @@
 
     --corTexto: #fff;
     --corTexto-2: #000;
+    --corTextoLaranja: #ff9310;
 
     --fundoImgLanding: #09ff00;
 }
@@ -29,8 +30,19 @@
 
 .titulo-2 {
     color: var(--corTexto-2);
+    font: 100 30px 'SofiaSans';
 
     transition: 1000ms;
+}
+
+.titulo-2-laranja {
+    color: var(--corTextoLaranja);
+
+    transition: 1000ms;
+}
+
+.tituloFino {
+    font-weight: 1;
 }
 
 #tituloDestaque {
@@ -44,7 +56,7 @@
     font: 1000 60px "SofiaSans";
 }
 
-#logo {
+.tituloPrincipal {
     font: 1000 50px "SofiaSans";
 }
 
@@ -52,6 +64,10 @@
     color: var(--fundoImgLanding);
 
     transition: 1000ms;
+}
+
+.POStitulo {
+    padding: 25px 75px;
 }
 
 /* topo */
