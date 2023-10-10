@@ -8,7 +8,13 @@ trocarTema.addEventListener('click', () => {
 
     if (trocarTema.classList.contains('temaEscuro-Botao')) {
         trocarTema.style.backgroundImage = 'url("img/toggleOFF.png")';
-    } else if (trocarTema.classList.contains('temaClaro-Botao')) {
+
+        document.documentElement.style.setProperty('--corFundo', '#000');
+    }
+    
+    else if (trocarTema.classList.contains('temaClaro-Botao')) {
         trocarTema.style.backgroundImage = 'url("img/toggleON.png")';
+        
+        document.documentElement.style.setProperty('--corFundo', '#fff');
     }
 });
